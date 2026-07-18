@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <title>File Processor</title>
+</head>
+<body>
+<h2>File Automation Tool</h2>
+<label>Source Folder:</label><br>
+<input type="text" id="source"><br><br>
+<label>Destination Folder:</label><br>
+<input type="text" id="destination"><br><br>
+<button onclick="submitData()">Submit</button>
+<script>
+
+function submitData() {
+
+    var source = document.getElementById("source").value;
+
+    var destination = document.getElementById("destination").value;
+
+    fetch("http://127.0.0.1:5000/process", {
+
+        method: "POST",
+
+        headers: {
+
+            "Content-Type": "application/json"
+
+        },
+
+        body: JSON.stringify({
+
+            source: source,
+
+            destination: destination
+
+        })
+
+    })
+
+    .then(response => response.text())
+
+    .then(data => alert(data))
+
+    .catch(error => alert("Error: " + error));
+
+}
+</script>
+</body>
+</html>
