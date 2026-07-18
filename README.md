@@ -11,28 +11,28 @@ The application enables users to provide personal information along with source 
 
 ## Features
 
-✅ User Information Capture
+ User Information Capture
 
 - Name
 - Email Address
 - Phone Number
 
-✅ Dynamic Folder Selection
+ Dynamic Folder Selection
 
 - Source Folder Path
 - Destination Folder Path
 
-✅ Automated File Analysis
+ Automated File Analysis
 
-✅ Excel Report Generation
+ Excel Report Generation
 
-✅ File Metadata Extraction
+ File Metadata Extraction
 
 - File Name
 - File Size (KB)
 - File Extension
 
-✅ User-Friendly Web Interface
+ User-Friendly Web Interface
 
 ---
 
